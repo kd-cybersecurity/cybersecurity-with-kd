@@ -1,227 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cybersecurity with KD</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Ethical Hacking | Cybersecurity with KD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
-
     body {
-      background: radial-gradient(circle at top, #020617, #000000);
+      background: #020617;
       color: #e5e7eb;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-family: Roboto, sans-serif;
+      padding: 40px;
     }
 
-    /* MATRIX BACKGROUND */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: repeating-linear-gradient(
-        0deg,
-        rgba(56,189,248,0.03),
-        rgba(56,189,248,0.03) 1px,
-        transparent 1px,
-        transparent 4px
-      );
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    header {
-      position: relative;
-      z-index: 1;
-      padding: 80px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #020617, #020617, #020617);
-    }
-
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
+    h1 {
       color: #38bdf8;
-      margin-bottom: 10px;
-      text-shadow: 0 0 15px rgba(56,189,248,0.6);
+      font-family: Orbitron, sans-serif;
     }
 
-    header p {
-      font-size: 1.1rem;
-      max-width: 720px;
-      margin: auto;
-      color: #94a3b8;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px;
-      background: rgba(2,6,23,0.85);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid rgba(56,189,248,0.2);
-    }
-
-    nav a {
-      color: #e5e7eb;
-      text-decoration: none;
-      font-weight: 500;
-      position: relative;
-    }
-
-    nav a::after {
-      content: "";
-      position: absolute;
-      bottom: -6px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: #38bdf8;
-      transition: width 0.3s ease;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    section {
-      position: relative;
-      z-index: 1;
-      padding: 70px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      font-family: 'Orbitron', sans-serif;
+    a {
       color: #38bdf8;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px rgba(56,189,248,0.4);
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: linear-gradient(145deg, #020617, #020617);
-      padding: 22px;
-      border-radius: 14px;
-      border: 1px solid rgba(56,189,248,0.15);
-      box-shadow: 0 0 20px rgba(56,189,248,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 0 30px rgba(56,189,248,0.25);
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 28px;
-      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-      color: #020617;
-      border-radius: 30px;
       text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 0 20px rgba(56,189,248,0.4);
-    }
-
-    .btn:hover {
-      filter: brightness(1.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px;
-      background-color: #020617;
-      font-size: 0.9rem;
-      color: #94a3b8;
-      border-top: 1px solid rgba(56,189,248,0.2);
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Cybersecurity with KD</h1>
-    <p>Learn cybersecurity step by step — from beginner fundamentals to ethical hacking concepts — in simple, practical way.</p>
-    <a href="#youtube" class="btn">Watch on YouTube</a>
-  </header>
+  <a href="index.html">← Back to Home</a>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#topics">Topics</a>
-    <a href="#youtube">YouTube</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <h1>Ethical Hacking</h1>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About This Channel</h2>
-    <p>
-      Cybersecurity with KD is an educational platform created for beginners who want to understand cybersecurity clearly and ethically.
-      This site supports the YouTube channel by providing structured learning, resources, and future hands-on content.
-    </p>
-  </section>
+  <p>
+    Ethical hacking is the practice of testing systems, networks, and applications
+    to find security vulnerabilities **legally and responsibly**.
+  </p>
 
-  <!-- TOPICS -->
-  <section id="topics">
-    <h2>What You Will Learn</h2>
-    <div class="cards">
-  <div class="cards">
-  <a href="cybersecurity-basics.html" class="card" target="_blank" class="btn">Cybersecurity Basics</a>
-  <a href="ethical-hacking.html" class="card" target="_blank" class="btn">Ethical Hacking Concepts</a>
-  <a href="network-security.html" class="card" target="_blank" class="btn">Network & System Security</a>
-  <a href="web-security.html" class="card" target="_blank" class="btn">Web & Application Security</a>
-  <a href="careers.html" class="card" target="_blank" class="btn">Careers in Cybersecurity</a>
-  <a href="penetrstion-testion.html class="card target="_blank" class="btn">Penetration Testing</a>
-    </div>
-  </section>
+  <h2>What You Will Learn</h2>
+  <ul>
+    <li>What is ethical hacking</li>
+    <li>Types of hackers</li>
+    <li>Legal & ethical boundaries</li>
+    <li>Basic attack concepts (theory)</li>
+    <li>Career roadmap</li>
+  </ul>
 
-  <!-- YOUTUBE -->
-  <section id="youtube">
-    <h2>YouTube Channel</h2>
-    <p>Watch beginner-friendly cybersecurity videos and practical explanations on YouTube.</p>
-    <a href="https://youtube.com/@cybersecuritykd?si=tWe9NWFmU2ixy4e6" target="_blank" class="btn">Visit Channel</a>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>For collaboration or queries, reach out via email.</p>
-    <p><strong>Email:</strong> sharmakd574@gmail.com</p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Cybersecurity with KD | Educational Purpose Only
-  </footer>
+  <h2>Important Notice</h2>
+  <p>
+    All content is for **educational purposes only**.
+    No illegal activities are promoted.
+  </p>
 
 </body>
 </html>
-
-
-
